@@ -1,0 +1,12 @@
+.primary {
+  @apply rounded-full px-4 py-2 border-2 hover:bg-gray-500 transition ease-in-out;
+}
+.secondary {
+  @apply rounded-full px-4 py-2 bg-indigo-700 border-2 border-gray-400 hover:bg-indigo-600 transition ease-in-out;
+}
+.primary-sm {
+  @apply rounded-full px-3 text-lg border-2 hover:bg-gray-500 transition ease-in-out;
+}
+.secondary-sm {
+  @apply rounded-full px-3 text-lg bg-indigo-700 border-2 border-gray-400 hover:bg-indigo-600 transition ease-in-out;
+}
