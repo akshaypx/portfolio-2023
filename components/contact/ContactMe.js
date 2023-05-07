@@ -1,7 +1,10 @@
 import styles from "./ContactMe.module.css";
 export default function ContactMe() {
   return (
-    <div className="md:h-screen md:flex sm:h-max justify-center items-center text-white bg-gradient-to-b from-gray-800 to-indigo-800">
+    <div
+      className="md:h-screen md:flex sm:h-max justify-center items-center text-white bg-gradient-to-b from-gray-800 to-indigo-800"
+      id="contact"
+    >
       <div className="h-full w-full flex flex-col justify-center items-center">
         <div className="w-1/2 flex flex-col justify-center items-center gap-5 text-4xl my-20 md:my-0 md:text-8xl">
           <h1 className={styles["heading-1"]}>Contact Me</h1>

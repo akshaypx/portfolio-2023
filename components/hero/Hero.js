@@ -4,7 +4,10 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col-reverse md:flex md:flex-row justify-center w-full items-center md:p-20 md:pt-0 h-screen bg-gradient-to-t from-gray-800 to-indigo-800">
+    <div
+      className="flex flex-col-reverse md:flex md:flex-row justify-center w-full items-center md:p-20 md:pt-0 h-screen bg-gradient-to-t from-gray-800 to-indigo-800"
+      id="home"
+    >
       <div className=" text-white w-1/2 text-center md:text-left">
         <b className="text-4xl md:text-6xl">
           <span
@@ -12,7 +15,7 @@ export default function Hero() {
           >
             Front-End React Developer
           </span>
-          👋
+          <span className="">👋</span>
         </b>
 
         <br />

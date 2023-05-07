@@ -5,7 +5,10 @@ import styles from "./Work.module.css";
 
 export default function Work() {
   return (
-    <div className="flex flex-col justify-center w-full items-center p-20 bg-gray-800">
+    <div
+      className="flex flex-col justify-center w-full items-center p-20 bg-gray-800"
+      id="work"
+    >
       <div
         className={`${styles["work-font"]} text-4xl md:text-8xl text-white my-28 md:mb-20`}
       >

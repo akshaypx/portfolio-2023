@@ -1,3 +1,6 @@
 .hero-font {
   font-family: "Clash Display", sans-serif;
 }
+.animate-waving-hand {
+  animation: wave 2s linear infinite;
+}
