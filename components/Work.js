@@ -39,7 +39,8 @@ export default function Work() {
           </div>
           {/* body */}
           <div className="text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            A website for Movie Ratings and their description. Made using React,
+            Redux, OMDB API.
           </div>
         </div>
       </div>
@@ -64,7 +65,8 @@ export default function Work() {
             </Link>
           </div>
           <div className="text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            A website where you can enter name of any city and get latest
+            weather update.
           </div>
         </div>
       </div>

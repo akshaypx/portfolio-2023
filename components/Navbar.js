@@ -6,7 +6,16 @@ export default function Navbar() {
     <div className="sticky top-0 z-10">
       <div className="  h-20 flex items-center justify-between backdrop-filter backdrop-blur-lg bg-opacity-20 text-white">
         <div className="w-full flex justify-center md:justify-start items-center text-center md:text-left md:pl-10 text-xl">
-          <b className="m-5 md:m-0">Akshay.dev</b>
+          <b
+            className="m-5 md:m-0"
+            onClick={() => {
+              document
+                .getElementById("home")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Akshay.dev
+          </b>
           {!isOpen ? (
             <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
               <svg

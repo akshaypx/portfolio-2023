@@ -1,5 +1,18 @@
+import { useState } from "react";
 import styles from "./ContactMe.module.css";
 export default function ContactMe() {
+  const [title, setTitle] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    //send email
+    window.open(
+      `mailto:akshaysrivastava46@gmail.com?subject=${title}&body=${message}`
+    );
+    //clear states
+    setTitle("");
+    setMessage("");
+  };
   return (
     <div
       className="md:h-screen md:flex sm:h-max justify-center items-center text-white bg-gradient-to-b from-gray-800 to-indigo-800"
@@ -18,13 +31,20 @@ export default function ContactMe() {
             className="w-full p-5 rounded-xl focus-visible:border-none  bg-gray-600 text-xl"
             type="text"
             placeholder="Title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
           />
           <textarea
             className="w-full  p-5 rounded-xl focus-visible:border-none  bg-gray-600 text-xl"
             rows="2"
             placeholder="Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
-          <button className="w-full bg-indigo-800 px-4 py-4 rounded-xl text-xl hover:bg-indigo-700 transition ease-in-out">
+          <button
+            className="w-full bg-indigo-800 px-4 py-4 rounded-xl text-xl hover:bg-indigo-700 transition ease-in-out"
+            onClick={(e) => handleSubmit(e)}
+          >
             Send
           </button>
           <span className="text-indigo-100">
